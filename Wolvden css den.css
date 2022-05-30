@@ -1,0 +1,656 @@
+﻿/* ## ------------------------------------------------------- GENERAL ------------------------------------------------------- ## */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Castoro&family=Public+Sans:wght@300&display=swap');
+
+
+body /* Background Image, font family, font color */ {
+    background:url(https://i.imgur.com/ZtVNtkZ.jpg )
+    center fixed !important;
+    background-size:cover !important;
+    font-family: public sans;
+    color: #908c7a;
+}
+
+
+a /* Links on entire page */ {
+    color: #6f6959;
+}
+a:hover /* Hover of links on entire page */ {
+    color: #908c7a;
+    text-decoration: line-through;
+}
+
+
+.alert /* Alerts and notifications that appear at the top of the page. */ {
+    background: #1a1918;
+    border: 4px double #4f4a47;
+    color: #908c7a;
+} .alert a /* Separate alert links if desired */ {
+    color: #908c7a !important;
+}
+
+
+
+
+/* ## ------------------------------------------------------- REPORT, UPDATE/SAVE, BOOKMARK ------------------------------------------------------- ## */
+
+
+.btn-danger /* Report button */ {
+    background-color: #4f4a47;
+    color: #1a1918;
+    border: none;
+    border: 4px double #1a1918;
+    font-weight: bold;
+}.btn-danger:hover {
+    background-color: #4f4a47;
+    color: #1a1918;
+    border: none;
+    border: 4px double #1a1918;
+    font-weight: bold;
+}
+
+
+
+
+.btn-primary, .btn-success /* Update/Save buttons on entire page */ {
+    background-color: #282725;
+    color: #6f6959;
+    border: none;
+    border: 1px solid #131212;
+}
+.btn-primary, .btn-success:hover /* Hover of the above */ {
+    background-color: #282725;
+    color: #6f6959;
+    border: none;
+    border: 1px solid #131212;
+}
+
+
+#bookmarkPage.fas.fa-bookmark.text-danger /* Bookmark Icon */ {
+    color: #6f6959 !important;
+}
+
+
+
+
+/* ## ------------------------------------------------------- BOXES ------------------------------------------------------- ## */
+
+
+.box {
+    background: #1a1918ad;
+    border: 4px double #1a1918;
+        text-align: center;
+        padding: 15px;
+        margin: 0 2% 30px;
+        border-radius: 10px;
+        float: left;
+        width: 46%;
+        height: 145px;
+        overflow: auto;
+}
+
+
+.box2  {
+    background: #1a1918ad;
+    border: 4px double #1a1918;
+        text-align: center;
+        padding: 15px;
+        margin: 0 2% 30px;
+        border-radius: 10px;
+        float: left;
+        width: 46%;
+        height: 145px;
+        overflow: auto;
+}
+
+
+.box3  {
+    background: #1a1918ad;
+    border: 4px double #1a1918;
+        text-align: center;
+        padding: 15px;
+        margin: 0 2% 30px;
+        border-radius: 10px;
+        float: left;
+        width: 96%;
+        height: 145px;
+        overflow: auto;
+}
+
+
+.box4  {
+    background: #1a1918ad;
+    border: 4px double #1a1918;
+        text-align: center;
+        padding: 15px;
+        margin: 0 2% 30px;
+        border-radius: 10px;
+        float: left;
+        width: 30%;
+        height: 145px;
+        overflow: auto;
+}
+
+
+.box5  {
+    background: #1a1918ad;
+    border: 4px double #1a1918;
+        text-align: center;
+        padding: 15px;
+        margin: 0 2% 30px;
+        border-radius: 100px;
+        float: left;
+        width: 28%;
+        height: 145px;
+        overflow: auto;
+}
+
+
+.box6 {
+    background: #1a1918ad;
+    border: 4px double #1a1918;
+        text-align: center;
+        padding: 15px;
+        margin: 0 2% 30px;
+        border-radius: 10px;
+        float: left;
+        width: 30%;
+        height: 145px;
+        overflow: auto;
+}
+
+
+
+
+::-webkit-scrollbar {
+        width: 10px;
+        height: 0px;
+        border-radius: 10px;
+        overflow: hidden !important;
+}
+::-webkit-scrollbar-track {
+        background: transparent;
+}
+::-webkit-scrollbar-thumb {
+        background: transparent;
+}
+
+
+
+
+/* ## ------------------------------------------------------- NAVBAR MAIN ------------------------------------------------------- ## */
+
+
+.navbar-main .nav-link /* Individual navigation links: 'Den, Crossroads, etc.' */ {
+    color: #908c7a !important;
+    transition:.5s ease;
+}
+.navbar-main .nav-link:hover /* Hover of the links above */ {
+    color: #6f6959 !important;
+    text-decoration: line-through !important;
+}
+
+
+#header .navbar-main .nav-link .fa /* Paw Icon, etc. of Den, etc. */ {
+    color: #6f6959;
+    transition:.5s ease;
+}
+#header .navbar-main .nav-link:hover .fa /* Hover of the Icons above */ {
+    color: #443f3d;
+}
+
+
+.navbar-status /* Status bar containing the currencies, "Welcome back", etc. */ {
+    background: #1a1918 !important;
+    border-top: 2px dashed #4f4a47;
+    color: #908c7a !important;
+}
+.btn-group-vertical>.btn, .btn-group>.btn /* Username in that bar */ {
+    color: #908c7a !Important;
+}
+.navbar-status a /* Currency, Messages, etc. links */ {
+    color: #908c7a !important;
+}
+#header .navbar-status a:hover /* Hover of Currency, Messages, etc. links */ {
+    color: #6f6959 !important;
+    text-decoration: line-through;
+}
+
+
+/* SC Icon */ .icon-beetle-silver, .icon-silver-cone {
+    filter: grayscale(50%) contrast(100%) brightness(100%)
+}
+/* GC icon */ .icon-beetle-gold, .icon-gold-cone {
+    filter: grayscale(50%) contrast(100%) brightness(100%)
+}
+
+
+
+
+/* ########## BREADCRUMB BAR ########## */
+
+
+.breadcrumb-item+.breadcrumb-item:before /* The slash between breadcrumb bar links */ {
+    color: #908c7a;
+}
+
+
+.breadcrumb-item.active /* Pack Name in breadcrumb bar */ {
+    color: #908c7a;
+}
+
+
+
+
+.breadcrumb::after /* CSS Layout Credit */ {
+    content:'CSS by Rapirisu #5303';
+    position:absolute;
+    right:35px;
+    color: #6f6959;
+}
+
+
+
+
+/* ## ------------------------------------------------------- SIDEBAR ------------------------------------------------------- ## */
+
+
+#header .navbar-main, .breadcrumb-nav, #sidebar, .table th /* 2nd Background for many tables */ {
+    background:url(https://i.imgur.com/v11F9h3.jpg)
+    center fixed !important;
+    background-size:cover !important;
+}
+
+
+#sidebar .card /* "Card" sections of the sidebar */ {
+    background: #1a1918;
+    border: none;
+    border: 4px double #4f4a47;
+}
+
+
+#sidebar h3, #sidebar h4 /* Card headers */ {
+    font-family: castoro;
+    font-size: 30px;
+    margin-bottom: 0px;
+    margin-top: -5px;
+}
+
+
+#sidebar #card-user h3 /* Section with the Lead Name in Sidebar */ {
+    margin: -15px;
+    border-bottom: 2px dashed #4f4a47;
+}
+div.d-flex.justify-content-between.mb-3 /* Small section with lead and featured wolf icon in Sidebar */ {
+    margin-top: -5px;
+}
+
+
+.card-body .w-50:first-child div /* Border featured wolf in Sidebar */ {
+border: none !important;
+}
+
+
+.w-50 > a img /* Wolf Icon Sidebar */ {
+    border-radius: 0px 50px 50px 50px;
+    filter:grayscale(50%) contrast(100%);
+    transition:.5s ease;
+    border: 4px double #6f6959;
+}
+.w-50 div a img /* Featured Wolf Icon Sidebar */ {
+    border-radius: 50px 50px 0px 50px;
+    filter:grayscale(50%) contrast(100%);
+    transition:.5s ease;
+    border: 1px solid #6f6959;
+}
+
+
+
+
+/* ## ------------------------------------------------------- MAIN PAGE ------------------------------------------------------- ## */
+
+
+#main /* Section containing the site's main content. */ {
+    background: hsla(0, 0%, 0%, .5);
+    border: 4px double #1a1918;
+}
+
+
+h1 /* Pack Name Title */ {
+    color: #1a1918;
+    font-family: castoro;
+    text-align: center;
+    font-size: 70px;
+    margin-top: -20px;
+    text-shadow: 0px 0px 10px rgb(132, 120, 115);
+}
+
+
+.nav-tabs /* Section containing the Den and Profile buttons */ {
+    justify-content: center;
+    border-bottom: 1px solid #2c1724;
+    margin-top: -20px;
+}
+.nav-tabs .nav-link /* Individual Den and Profile buttons */ {
+    background: rgba(0, 0, 0, .4);
+    border: 4px double #1a1918;
+    transition:.5s ease;
+}
+.nav-tabs .nav-link:hover /* Hover of inactive button */ {
+    background: rgba(0, 0, 0, .5);
+    border: 4px double #1a1918;
+}
+.nav-tabs .nav-link.active /* Link of the page being viewed */ {
+    background-color: #6f6959;
+    color: #1a1918;
+    border: none;
+    border: 4px double #1a1918;
+    font-weight: bold;
+}
+
+
+/* ## ------------------------------------------------------- WOLF & PACK INFORMATION TABLES ------------------------------------------------------- ## */
+
+
+.table /* Tables containing Pack and User information */ {
+    background: #1a1918;
+    border: 2px solid #1a1918;
+}
+
+
+.table th /* Individual table headers - Title of the lead, Cave Names, etc. */ {
+    color: #908c7a;
+} .table th a /* Pack Leader Name in that table */ {
+    color: #6f6959;
+}
+
+
+tr:nth-of-type(odd) /* Individual 'Stripes' of Pack Information + Caves */ {
+    background: #131212 !important;
+}
+
+
+
+
+/* ########## Lead Wolf ########## */
+
+
+.border-none .card /* Lead Wolf icon background */ {
+    background-color:transparent !important;
+}
+
+
+.border-none .card-img-top, .table .form-row img /* Lead wolf icon */ {
+    border-radius: 5px 100px 100px 100px;
+}
+
+
+img.card-img-top /* Lead wolf + Pack Dynasty, etc. border */ {
+    border: 2px solid #6f6959;
+}
+
+
+i.fas.fa-mars.text-danger /* Breeding Male, Heat, etc. Symbol of Lead Wolf */ {
+    filter: contrast(0%) brightness(100%)
+}
+
+
+
+
+/* ########## Featureed Wolf ########## */
+
+
+.featured-wolf img /* Featured wolf icon */ {
+    border-radius: 100px 5px 100px 100px;
+    border: 2px solid #6f6959;
+}
+
+
+.btn-group-sm>.btn, .btn-sm /* 'Remove' Symbol + Text below Featured Wolf */ {
+    color: #6f6959 !important;
+}
+
+
+
+
+/* ########## Dynasty, etc. Buttons ########## */
+
+
+div.card.text-center>img /* Dystasy, etc. Images */ {
+    filter: grayscale(70%) contrast(100%) brightness(95%);
+    transition:.5s ease;
+    border: none;
+} .col-6 .card.text-center /* 'Dynasty, etc.' Buttons */ {
+    background: #1a1918 !important;
+    border: 2px solid #1a1918 !important;
+    color: #5b534f;
+}
+
+
+
+
+
+
+/* ########## Standard View with & without Headshots ########## */
+
+
+.subheader /* WITH & WITHOUT Headhots // Subheader row of Cave tables, 'Name, Stats, Info, etc.' */ {
+    background: #5b524e !important;
+    border: 2px solid #1a1918;
+}
+
+
+img.border-bottom /* WITH Headshots // Affects headshots */ {
+    filter:grayscale(50%) contrast(100%);
+    border-radius: 10px;
+    border: none !important;
+    border: 2px solid #6f6959 !important;
+}
+img.border-bottom.p-2 /* WITH Headshots // Nursing Puppy icon */ {
+    border: none !important;
+}
+
+
+
+
+/* ########## CARD View Den Display ########## */
+
+
+div.card-body.bg-light.p-0.text-center /* Card background */ {
+    background-color: #2b2928 !important;
+    color: #908c7a;
+    border-radius: 20px;
+}
+
+
+.text-light /* Headers above wolf icons */ {
+    padding-bottom: .2rem;
+    background-color: #22201f !Important;
+    color: #908c7a !important;
+    border-bottom: 2px dashed #4f4a47;
+}
+
+
+img.rounded-bottom /* Headshot icons in card den display */ {
+    margin-top: 9px;
+    border-radius: 20px !important;
+    border: 2px solid #6f6959 !important;
+}
+
+
+span.badge.badge-info /* NURSING Icon below puppy icon */ {
+    background-color: #1a1918;
+    color: #908c7a;
+}
+img.rounded-bottom.pl-3.pr-3.pt-2.pb-1 /* Nursing pup icon */ {
+    border: none !important;
+}
+
+
+
+
+/* ########## CAVE Bottom Information ########## */
+
+
+.bottom /* Background of that table */ {
+    background: #1a1918 !important;
+}
+.form-control /* Age ascending, etc. menu. Don't fiddle with it too much */ {
+    margin-top: 10px;
+    background: #2b2928 !important;
+    border: none;
+    border: 1px solid #1a1918;
+    color: #908c7a;
+}
+
+
+.btn-primary, .btn-success /* Update Button of Caves separate from General */ {
+    margin-top: 10px;
+}
+
+
+/* ## ------------------------------------------------------- PROGRESS BARS FOR HUNGER, ETC. ------------------------------------------------------- ## */
+
+
+.progress /* Progress bars when empty */ {
+    background-color: #131212 !important;
+    border-radius: 10px;
+    border: 1px solid #131212;
+}
+.bg-warning, .bg-success /* ENERGY bars */ {
+    background-color: #2d2826 !important;
+}
+#sidebar .bg-danger, .bg-primary  /* HUNGER bars */ {
+    background-color: #423c39 !important;
+}
+#sidebar .bg-info, .bg-danger /* HP bars */ {
+    background-color: #736a65 !important;
+}
+#sidebar .bg-success, .bg-info /* EXP bars */ {
+    background-color: #a29690 !important;
+}
+
+
+
+
+/* ## ------------------------------------------------------- FEED ALL & PLAY ALL BUTTONS ------------------------------------------------------- ## */
+
+
+.accordion .card:first-of-type /* FEED ALL Part */ {
+    background-color: #131212 !important;
+    color: #908c7a;
+}.accordion .card:first-of-type a /* Rollovers remaining */ {
+    color: #736a65 !important;
+}
+
+
+
+
+.accordion .card:last-of-type /* PLAY ALL Part */ {
+    background-color: #131212 !important;
+    color: #908c7a;
+}.accordion .card:last-of-type a {
+    color: #736a65 !important;
+}
+
+
+.btn-link /* FAPA Header Text + 'Remove Icon' from Featured Wolf */ {
+    color: #736a65 !important;
+}
+
+
+.btn-info /* Feed/Play Buttons */ {
+    background-color: #282725;
+    color: #908c7a !Important;
+    border: none;
+    border: 1px solid #131212;
+}.btn-info:hover {
+    border: 1px solid #131212;
+    background-color: #131212;
+    color: #736a65 !important;
+}
+
+
+
+
+/* ## ------------------------------------------------------- CAVE BUILD SECTION ------------------------------------------------------- ## */
+
+
+div.card.mb-3 /* Create New Cave background + Breeding Male Symbol background */ {
+    background-color: #131212 !important;
+    color: #908c7a;
+}
+button#submitBtn.btn.btn-primary /* Create New Cave button */ {
+    background-color: #2b2928;
+    color: #908c7a;
+}button#submitBtn.btn.btn-primary:hover {
+    border: 1px solid #131212;
+    background-color: #131212;
+    color: #736a65;
+}
+
+
+
+
+/* ## ------------------------------------------------------- BOTTOM EDITOR ------------------------------------------------------- ## */
+
+
+/* Text Background and Text of Editor */ .note-editor.note-airframe .note-editing-area .note-editable, .note-editor.note-frame .note-editing-area .note-editable {
+    background-color: #1a1918 !important;
+    color: #6f6959;
+}
+/* Drag Bar below Text Field in Editor */ .note-editor.note-airframe .note-statusbar .note-resizebar, .note-editor.note-frame .note-statusbar .note-resizebar {
+    background: #908c7a !important;
+    border: none !Important;
+}
+/* Drag icon in that small bar */ .note-editor.note-airframe .note-statusbar .note-resizebar .note-icon-bar, .note-editor.note-frame .note-statusbar .note-resizebar .note-icon-bar {
+    border: none !important;
+    border-top: 1px solid #6f6959 !Important;
+}
+
+
+
+
+/* ## ------------------------------------------------------- EXPAND TERRITORY + ADD IMMORTAL SLOT ------------------------------------------------------- ## */
+
+
+div.card.text-center /* Expand Territory + Add Immortal Slot Tables // NOTE: Border affect Dynasty, etc. */ {
+    background-color: #1a1918 !important;
+    color: #6f6959;
+    border: none;
+    border: 1px solid #131212 !Important;
+} .btn-warning /* Buttons for those Tables */ {
+    background: #282725 !important;
+    border: none;
+    color: #6f6959;
+}.btn-warning:hover {
+    background-color: #131212 !important;
+    color: #736a65 !important;
+}
+
+
+
+
+/* ## ------------------------------------------------------- FOOTER ------------------------------------------------------- ## */
+
+
+#footer /* Copyright content at the page bottom // Don't mess with it too much */ {
+    background: #1a1918 !important;
+    color: #6f6959;
+    border-top: 2px dashed #4f4a47;
+}
+
+
+#footer a /* Links in that Footer */ {
+    color: #908c7a;
+}#footer a:hover /* Hover of the above */ {
+    color: #6f6959;
+}
+
+
+#footer nav .nav-item .nav-link /* Terms of Service, etc. links */ {
+    color: #908c7a;
+}  #footer nav .nav-item .nav-link:hover /* Hover of the above */ {
+    color: #6f6959;
+}
